@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="stady1">
+    <div class="container">
+        <h2>Арифметические задачи (сложение, вычитание, умножение, деление)</h2>
+        <h4>Уровень 1</h4>
+        <div class="blocks">
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        10 + 67 =
+                        <input type="number" id="result" name="my" >
+                    </label>
+
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 10 + 67 = 77</div>
+                </form>
+                <span class="spanRes">77</span>
+
+                <button id="btnCheck" class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        53 - 16 =
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 53 - 16 = 37</div>
+                </form>
+                <span class="spanRes">37</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        13 * 7 =
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 13 * 7 = 91</div>
+                </form>
+                <span class="spanRes">91</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        63 / 9 =
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 63 / 9 = 7</div>
+                </form>
+                <span class="spanRes">7</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        123 - 79 =
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 123 -79 = 44</div>
+                </form>
+                <span class="spanRes">44</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        56 + 77 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 56 + 77 = 133</div>
+                </form>
+                <span class="spanRes">133</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        12 * 11 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 12 * 11 = 132</div>
+                </form>
+                <span class="spanRes">132</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        69 / 3 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 69 / 3 = 23</div>
+                </form>
+                <span class="spanRes">23</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        57 + 68 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 57 + 68 = 125</div>
+                </form>
+                <span class="spanRes">125</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        97 - 68 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 97 - 68 = 29</div>
+                </form>
+                <span class="spanRes">29</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        9 * 17 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 9 * 17 = 153</div>
+                </form>
+                <span class="spanRes">153</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        91 / 7 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 91 / 7 = 13</div>
+                </form>
+                <span class="spanRes">13</span>
+
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+        </div> <!-- /blocks -->
+        <h4>Уровень 2</h4>
+        <div class="blocks">
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        15 + 92 - 27 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br> 15 + 92 - 27 = 80</div>
+                </form>
+                <span class="spanRes">80</span>
+    
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        16 * 3 / 6 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br>  16 * 3 / 6 = 8</div>
+                </form>
+                <span class="spanRes">8</span>
+    
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        25 - 2 * 8 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br>  25 - 2 * 8 = 9</div>
+                </form>
+                <span class="spanRes">9</span>
+    
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        16 + 27 - (7 * 3) = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br>  16 + 27 - (7 * 3) = 22</div>
+                </form>
+                <span class="spanRes">22</span>
+    
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        5 + 5 * 5 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br>  5 + 5 * 5 = 30</div>
+                </form>
+                <span class="spanRes">30</span>
+    
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        13 * 4 - 37 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br>  13 * 4 - 37 = 15</div>
+                </form>
+                <span class="spanRes">15</span>
+    
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        124 - 76 - 19 = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br>  124 - 76 - 19 = 29</div>
+                </form>
+                <span class="spanRes">29</span>
+    
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+            <div class="block">
+                <form action="/" method="post" id="form" >
+                    <label>
+                        13 * 3 - (34 - 18) = 
+                        <input type="number" id="result" name="my" >
+                    </label>
+                    <div class="fail">НЕВЕРНЫЙ ОТВЕТ!</div>
+                    <div class="answer">Молодец! Верно! <br>  13 * 3 - (34 - 18) = 23</div>
+                </form>
+                <span class="spanRes">23</span>
+    
+                <button id="btnCheck"  class="btn btn-primary" type="submit">Проверить ответ</button>
+                <button class="btn btn-secondary">Обновить пример</button>
+            </div>
+        </div>
+        <h4>Уровень 3 (упражнение на реакцию)</h4>
+        <div class="fishing">
+            <button class="btn btn-info position-absolute top-50 start-50 translate-middle" id="btnFishing">Начать</button>
+            <div class="fishInfo">
+                <h6>Условия</h6>
+                <p>На поле будут появляться круги.</p>
+                <p>Для получения очков, необходимо кликнуть по кругу.</p>
+                <p>У вас всего 1 минута.</p>
+                    </div>
+            <div class="fishCounter">Ваш счёт:
+                <span>0</span>
+            </div>
+            <div class="fishTimer">0</div>
+
+            <div class="fishField">
+                <!-- <div class="point"></div> -->
+            </div>
+            <div id="fishFinish" class="fishFinish position-absolute top-50 start-50 translate-middle">
+                <p style="font-size: 20px;">Игра окончена!</p>
+                <p>Ваш результат: <span class="fishTotal"></span></p>
+            </div>
+        </div>
+        <h4>Уровень 4</h4>
+        <div class="snowMain">
+        </div>
+        <h4>Уровень 5</h4>
+        <div class="cosmos">
+        </div>
+        <h4>Уровень 6</h4>
+        <div class="qube3d">
+            <div class="sides">
+                <!-- <div class="qubePoint"></div> -->
+                <div class="qube3Front"></div>
+                <div class="qube3dTop"></div>
+                <div class="qube3dLeft"></div>
+            </div>
+        </div>
+        <h4>Уровень 7</h4>
+        <div class="empty"></div>
+        
+    </div> <!-- /container -->
+</section>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

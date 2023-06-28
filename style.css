@@ -1,0 +1,83 @@
+
+
+*{box-sizing: border-box; margin: 0; padding: 0;}
+body {background-color: #e5a23970;}
+h2 {color: brown;}
+h4 {color: salmon; width: 100%; border-bottom: 1px solid gray;}
+button {margin: 10px 0;}
+
+.blocks {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.block {min-width: 460px; position: relative;}
+form {display: flex;}
+form label{margin-right: 30px;}
+.answer {font-weight: bold; display:none; color: green; position: absolute; right: 0;}
+.fail {font-weight: bold; display: none; color: red;}
+
+        /* рыбалка */
+.fishing {position: relative; width: 500px; height: 500px; margin: 20px auto;}
+.fishField {width: 100%; height: 100%; background-color: aqua;position: absolute; left: 50%; top: 0;transform: translateX(-50%); display: none;}
+.point {width: 60px; height: 60px; border: 1px solid rgb(34, 83, 147); border-radius: 50%; position: absolute; transform: scale(0);  animation: aniPoint 1.5s linear;}
+@keyframes aniPoint {
+    0%{transform: scale(1);}
+    100%{transform: scale(0);}}
+.fishInfo {width: 300px; margin: 50px auto 0;}
+.fishCounter {position: absolute; left: 0; top: -20px;}
+.fishTimer {position: absolute; right: 0; top: -20px;}
+.fishFinish {display: none;}
+
+        /* снежная буря */
+.snowMain  { height: 500px; position: relative; overflow: hidden;}
+.snowPoint { position: absolute; top: -20px; background-color: #fff; border-radius: 50%; box-shadow: 0 0 5px 2px #fff; animation: aniSnow  ease-out infinite;}
+@keyframes aniSnow {
+    0%{top: -10px; opacity: 1;}
+    30%{opacity: 1;}
+    100%{top: 503px; opacity: 0;}}
+    
+        /* космическое путешествие  */
+.cosmos { height: 500px; position: relative; background-image: url('img/cosmos.jpg'); background-size: 100% 100%; overflow: hidden;}
+.starTop, .starLeft, .starRight, .starBottom {width: 2px; height: 2px; border-radius: 50%; position: absolute; left: -20px; background-color: rgba(255, 255, 255, 0.807);} 
+.starTop {animation: aniStarTop 12s linear infinite;}
+@keyframes aniStarTop {
+0%{top: 50%; left: 50%;}
+100%{top: 0;transform: scale(2)}}
+.starLeft {box-shadow: 0 0 1px 0px #fff; animation: aniStarL 8.5s linear infinite;}
+@keyframes aniStarL {
+0%{top: 50%; left: 50%;}
+100%{left: 0;transform: scale(2)}}
+.starRight {box-shadow: 0 0 1px 0px #fff;animation: aniStarR 8.5s linear infinite;}
+@keyframes aniStarR {
+0%{top: 50%; left: 50%;}
+100%{left: 100%;transform: scale(2)}}
+.starBottom {animation: aniStarB 12s linear infinite;}
+@keyframes aniStarB {
+0%{top: 50%; left: 50%;}
+100%{top: 100%;transform: scale(2)}}
+
+        /* 3d проекция */
+.sides {width: 300px; height: 300px; transform-style: preserve-3d; transform: rotateX(-200deg) rotateY(415deg); margin: 150px;}
+/* .sides > div {position: absolute; width: 300px; height: 300px; } */
+.qube3Front {position: absolute; width: 300px; height: 300px;background-color: yellow; opacity: .5; transform: translate3d(0,0,150px); }
+.qube3dTop {position: absolute; width: 300px; height: 300px;background-color: green; opacity: .5; transform: rotateY(-90deg) translate3d(0,0,150px);}
+.qube3dLeft {position: absolute; width: 300px; height: 300px;background-color: red; opacity: .5; transform: rotateX(90deg) translate3d(0,0,150px);}
+
+.qubePoint {width: 4px; height: 4px; border-radius: 50%; background-color: #fff; animation: aniPointQube 3s linear infinite; position: absolute; transform: translate3d(0px,0px,150px)}
+@keyframes aniPointQube {
+        100%{transform: translate3d(150px, 150px, -150px);}
+}
+/* .qubePoint2 {width: 5px; height: 5px; background-color: #fff; animation: aniPointQube 3s linear infinite; position: absolute;  transform:  translate3d(0px,0px,150px)}
+@keyframes aniPointQube {
+        /* 100%{transform:translate3d(150px, 150px, -150px);} */
+/* } */ 
+
+        /* часть 7 */
+.empty {height: 400px;}
+
+
+
+
+
+        /* helpers */
+.show {display: block;}
+.hide {display: none;}
+.block span {display: none;}
+.btn-secondary {display: none;}
