@@ -1,10 +1,10 @@
 let cosmos = function (){
-    let getWidth = document.querySelector('.cosmos').getBoundingClientRect().width
+    let getWidth = document.querySelector('.cosmosBack').getBoundingClientRect().width
     let width = getWidth
-    let getHeight = document.querySelector('.cosmos').getBoundingClientRect().height
+    let getHeight = document.querySelector('.cosmosBack').getBoundingClientRect().height
 
     let createNewStar = function cns(){
-        let cosmos = document.querySelector('.cosmos')
+        let cosmos = document.querySelector('.cosmosBack')
         let starL = document.createElement('div')
         let starR = document.createElement('div')
         let starB = document.createElement('div')
@@ -30,6 +30,8 @@ let cosmos = function (){
         starB.style.left = getRandomWidth() + 'px'
         starL.style.top = getRandomCoord() + 'px'
         starR.style.top = getRandomCoord() + 'px'
+        starR.style.filter = blur('150px')
+
         star.style.animationDelay = getRandomTB() + 'ms'
         starB.style.animationDelay = getRandomTB() + 'ms'
         starL.style.animationDelay = getRandomDelay() + 'ms'
@@ -39,7 +41,6 @@ let cosmos = function (){
         starR.style.width = getSizeStar() + 'px'
         starL.style.width = getSizeStar() + 'px'
         // star.style.animationDuration = getRandomDelay() + 'ms'
-        console.log(getSizeStar())
 
         function getSizeStar(){
             function getRanNum(min, max){
@@ -62,80 +63,29 @@ let cosmos = function (){
         createNewStar()
     }
 
-    // for(let i = 0; i < 10; i++){
-    //     let createNewStar = function cns(){
-    //         let cosmos = document.querySelector('.cosmos')
-    //         let starR = document.createElement('div')
-    //         starR.className = 'starRight'
-
-    //         let getRandomCoord = function (){
-    //             function getRanNum(min, max){
-    //                 return Math.round(Math.random() * (max - min + 1)) + min
-    //             }
-    //             return getRanNum(0,getHeight)
-    //         }
-    //         starR.style.top = getRandomCoord() + 'px'
-    //         starR.style.animationDelay = getRandomDelay() + 'ms'
-    //         // star.style.animationDuration = getRandomDelay() + 'ms'
-
-    //         function getRandomDelay(){
-    //             return (Math.random() * 7000)
-    //         }
-
-    //         cosmos.appendChild(starR)
-    //     }
-    //     createNewStar()
-    // }
-    // for(let i = 0; i < 10; i++){
-    //     let createNewStar = function cns(){
-    //         let cosmos = document.querySelector('.cosmos')
-    //         let star = document.createElement('div')
-    //         star.className = 'starTop'
-
-    //         let getRandomCoord = function (){
-    //             function getRanNum(min, max){
-    //                 return Math.round(Math.random() * (max - min + 1)) + min
-    //             }
-    //             return getRanNum(0,width)
-    //         }
-    //         star.style.left = getRandomCoord() + 'px'
-    //         star.style.animationDelay = getRandomDelay() + 'ms'
-    //         // star.style.animationDuration = getRandomDelay() + 'ms'
-
-    //         function getRandomDelay(){
-    //             return (Math.random() * 10000)
-    //         }
-
-    //         cosmos.appendChild(star)
-    //     }
-    //     createNewStar()
-    // }
-    // for(let i = 0; i < 10; i++){
-    //     let createNewStar = function cns(){
-    //         let cosmos = document.querySelector('.cosmos')
-    //         let starB = document.createElement('div')
-    //         starB.className = 'starBottom'
-
-    //         let getRandomWidth = function (){
-    //             function getRanNum(min, max){
-    //                 return Math.round(Math.random() * (max - min + 1)) + min
-    //             }
-    //             return getRanNum(0,width)
-    //         }
-    //         starB.style.left = getRandomWidth() + 'px'
-    //         starB.style.animationDelay = getRandomDelay() + 'ms'
-    //         // star.style.animationDuration = getRandomDelay() + 'ms'
-
-    //         function getRandomDelay(){
-    //             return (Math.random() * 10000)
-    //         }
-
-    //         cosmos.appendChild(starB)
-    //     }
-    //     createNewStar()
-    // }
 }
 
 export default cosmos
 
 //  попробовать сделать через 3д моделирование
+// img src = https://source.unsplash.com/random/200x200
+
+
+/* <html>
+    <body onload="draw();">
+        <canvas id="canvas" width="100" height="100"></canvas>
+    </body>
+</html> */
+
+// function draw() {
+//     var canvas = document.getElementById('canvas');
+//     if (canvas.getContext){
+//       var ctx = canvas.getContext('2d');
+  
+//       ctx.beginPath();
+//       ctx.moveTo(75,50);
+//       ctx.lineTo(100,75);
+//       ctx.lineTo(100,25);
+//       ctx.fill();
+//     }
+//   }

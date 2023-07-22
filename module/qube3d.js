@@ -4,9 +4,9 @@ let qube3d = function(){
         let createNewPoint = function cnp(){
             let field = document.querySelector('.sides')
             let point = document.createElement('div')
-            let point2 = document.createElement('div')
             point.className = 'qubePoint'
-            point2.className = 'qubePoint2'
+            // let point2 = document.createElement('div')
+            // point2.className = 'qubePoint2'
 
             let aaa = function getRandomCoord(){
                 function getRanNum(min, max){
@@ -21,12 +21,15 @@ let qube3d = function(){
             function getRandomDelay(){
                 return (Math.random() * 8500)
             }
-            point.style.transform = `translate3d(${posX},${posY},150px)`
+            point.style.transform = `translate3d(${posX},${posY},-150px)`
             point.style.animationDelay = getRandomDelay() + 'ms'
 
             field.appendChild(point)
         }
+
         createNewPoint()
+
+       
     } 
 }
 
