@@ -36,7 +36,7 @@ const gfttr = function gameFlyToTheRight(){
   } 
       // элемент создается через определенный отрезок времени
   let timerIdAdd = setTimeout(function tick(){
-    // createWall()
+    createWall()
     let arrObj = document.querySelectorAll('.meteor')
     for(let obj of arrObj){
       let aaa = parseInt(obj.style.left)
@@ -99,9 +99,9 @@ const gfttr = function gameFlyToTheRight(){
     // gpvwt()
     if(100 > gpvwl() && gpvwt() == gpvs()){
       alert("Игра окончена!")
+      clearInterval(sss)
     }    
   }, 10);
-  clearInterval(sss)
 
 
 
